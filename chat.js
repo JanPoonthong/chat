@@ -30,6 +30,7 @@ function sendMessage(message) {
   client.on("connected", () => {
     client.say("#janpoonthong", message);
     client.disconnect();
+    process.exit(0)
   });
 }
 
